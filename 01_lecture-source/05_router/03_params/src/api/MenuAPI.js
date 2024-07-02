@@ -26,3 +26,12 @@ export function getMenuDetail(menuCode) {
     return menus.filter(menu => menu.menuCode === parseInt(menuCode))[0];    
 
 }
+
+export function searchMenu(searchMenuName) {
+
+    /* filter, map, match 
+        match : 포함 여부에 따라서 인수값이 포함되어 있으면 객체를 반환해준다.
+    */
+
+    return menus.filter(menu => menu.menuName.match(searchMenuName));
+}
