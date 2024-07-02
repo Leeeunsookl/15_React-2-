@@ -1,5 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Main from './pages/Main';
+import About from './pages/About';
+import Menu from './pages/Menu';
 
 function App() {
 
@@ -22,6 +24,8 @@ function App() {
             <Routes>
               {/* <Route path="/" element={<Main/>}/> */}
               <Route index element={<Main/>}/>
+              <Route path='/about' element={<About/>}/>
+              <Route path='/menu' element={<Menu/>}/>
             </Routes>
           </BrowserRouter>
         </>
